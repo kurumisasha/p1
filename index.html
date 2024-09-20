@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voucher Generator</h1>
+        <form id="voucher-form">
+            <label for="card-number">Enter Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <label for="voucher-count">Enter Voucher Count:</label>
+            <input type="number" id="voucher-count" name="voucher-count" required min="1">
+            <button type="submit">Generate Vouchers</button>
+        </form>
+        <div id="voucher-result" class="hidden">
+            <h2>Generated Vouchers</h2>
+            <ul id="voucher-codes"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
